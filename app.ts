@@ -10,5 +10,5 @@ const app = new Application();
 app.use(router.routes())
 app.use(router.allowedMethods())
 
-console.log(`Deno is running: ${HOST}:${PORT}`)
+console.log(`Deno is running: http://${HOST}:${PORT}`)
 await app.listen(`${HOST}:${PORT}`);
