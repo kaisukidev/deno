@@ -9,7 +9,8 @@ import {
 
 const router = new Router();
 
-router.get("/api/v1/video-chapters/:id", getChapters)
+router.get("/", getChapters)
+  .get("/api/v1/video-chapters/:id", getChapters)
   .get("/api/v1/video-chapters/:id/:seconds", getChapter)
   .post("/api/v1/video-chapters/:id", addChapter)
   .put("/api/v1/video-chapters/:id/:seconds", updateChapter)
